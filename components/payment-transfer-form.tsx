@@ -11,11 +11,7 @@ import { createTransfer } from "@/lib/actions/dwolla.actions";
 import { getBank, getBankByAccountId } from "@/lib/actions/user.actions";
 import { decryptId } from "@/lib/utils";
 
-<<<<<<< HEAD
-import { Button } from "@/components/ui/button";
-=======
 import { Button } from "./ui/button";
->>>>>>> 644f2fc912b24efa7046426adbf7401499c5cf31
 import {
   Form,
   FormControl,
@@ -24,17 +20,10 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-<<<<<<< HEAD
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { BankDropdown } from "@/components/brack-down";
-=======
 } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { BankDropdown } from "./brack-down";
->>>>>>> 644f2fc912b24efa7046426adbf7401499c5cf31
 import { createTransaction } from "@/lib/actions/transactions.actions";
 
 const formSchema = z.object({
