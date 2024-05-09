@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
-const Footer = ({ user, type = 'desktop' }: FooterProps) => {
+const Footer = ({ user , type = 'desktop' }: FooterProps) => {
   const router = useRouter();
 
   const handleLogOut = async () => {
@@ -17,7 +17,7 @@ const Footer = ({ user, type = 'desktop' }: FooterProps) => {
     <footer className="footer">
       <div className={type === 'mobile' ? 'footer_name-mobile' : 'footer_name'}>
         <p className="text-xl font-bold text-gray-700">
-          <UserIcon />
+          {user.firstName[0]}
         </p>
       </div>
 
