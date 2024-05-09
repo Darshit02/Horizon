@@ -11,20 +11,13 @@ import { useForm } from "react-hook-form"
 import { Button } from "@/components/ui/button"
 import {
   Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
 } from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
 import { authFormSchema } from '@/lib/utils';
 import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { getLoggedInUser, signIn, signUp } from '@/lib/actions/user.actions';
-import CustomInput from './custom-input';
-import PlaidLink from './plaid-link';
+import { signIn, signUp } from '@/lib/actions/user.actions';
+import CustomInput from '@/components/custom-input';
+import PlaidLink from '@/components/plaid-link';
 
 const AuthForm = ({ type }: { type: string }) => {
   const router = useRouter();
